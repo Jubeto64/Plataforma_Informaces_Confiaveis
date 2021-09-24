@@ -1,0 +1,14 @@
+A linguagem que eu to pensando pra nossa aplicação é javascript
+
+
+Exemplo de Código de blockchain
+https://github.com/anders94/blockchain-demo caso queiram ver a aplicação é essa: 
+https://tools.superdatascience.com/blockchain/hash
+
+Uma biblioteca que a gente pode usar é a crypto-js
+https://github.com/brix/crypto-js
+
+E um framework que eu achei interessante é o openchain:
+https://github.com/openchain/openchain-js
+
+ 
