@@ -11,4 +11,7 @@ https://github.com/brix/crypto-js
 E um framework que eu achei interessante é o openchain:
 https://github.com/openchain/openchain-js
 
+Vídeo como referência base de aplicações reais de como a blockchain funciona e como pode ser implementada
+https://youtu.be/SSo_EIwHSd4
+
  
