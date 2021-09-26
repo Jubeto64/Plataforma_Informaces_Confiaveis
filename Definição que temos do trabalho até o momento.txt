@@ -1,0 +1,7 @@
+Cenário 6: Plataforma para informações confiáveis
+Após um estudo de mercado, uma renomada empresa de TI decidiu desenvolver sua própria tecnologia de blockchain. Seu grupo constitui uma equipe do departamento de Pesquisa & Desenvolvimento dessa empresa e tem como responsabilidade a confecção de um protótipo de uma plataforma baseada na tecnologia de blockchain, que permita resolver um problema real que possui requisitos de confiança (ex. cartório, criptomoedas etc).
+
+Descrição que o Zé mandou:
+Nossa ideia é fazer um sistema web para validação de documentos.
+A ideia é que o usuário consiga inserir um documento dentro do site, seja ele um contrato ou algo que não possa ser alterado.
+Nisso faríamos dois tipos de usuários, onde o primeiro seria um administrador, que pode ver todas as informações que lá estão e acrescentar novas, e um o usuário, onde ele teria acesso somente aos hash que foram enviados por ele para o sistema.
