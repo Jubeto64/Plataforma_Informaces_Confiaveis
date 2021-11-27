@@ -19,7 +19,11 @@
       <% blocks.forEach(function(block){ %>
       <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Block<small class="text-muted">(Genesis block)</small></h5>
+            <h5 class="card-title">Block
+              <small class="text-muted">
+                <%= block.previousHash == 0 ? '(Genesis block)' : '' %>
+              </small>
+            </h5>
         </div>
     
         <ul class="list-grup list-group-flush">
