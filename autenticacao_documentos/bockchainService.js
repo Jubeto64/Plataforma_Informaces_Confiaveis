@@ -15,7 +15,7 @@ class BlockchainService {
     }
   
     getBlocks(){
-      this.blockchainInstance.chain;
+      return this.blockchainInstance.chain;
     }
   
     generateWalletKeys(){

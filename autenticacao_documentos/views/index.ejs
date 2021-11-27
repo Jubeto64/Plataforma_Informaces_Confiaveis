@@ -15,6 +15,8 @@
     <div class="container">
       <h1>Blocks on chain</h1>
       <p>Each card represents a block on the chain. Click on block to see the transactions stored inside.</p>
+
+      <% blocks.forEach(function(block){ %>
       <div class="card">
         <div class="card-body">
             <h5 class="card-title">Block<small class="text-muted">(Genesis block)</small></h5>
@@ -25,32 +27,34 @@
                 <span class="">Hash</span>
                 <br>
                 <div class="text-truncate">
-                    <small>asdfas</small>
+                    <small><%= block.hash %></small>
                 </div>
     
                 <br>
                 <span class="">Hash of previous block</span>
                 <br>
                 <div class="text-truncate">
-                    <small>asdfasfd</small>
+                    <small><%= block.previousHash %></small>
                 </div>
             </li>
     
             <li class="list-grup-item">
                 <span class="">Nounce</span><br>
                 <div class="text-truncate text-muted">
-                    <small>asdfsd</small>
+                    <small><%= block.nonce %></small>
                 </div>
             </li>
     
             <li class="list-grup-item">
                 <span class="">Timestamp</span><br>
                 <div class="text-truncate text-muted">
-                    <small>asdfsfds</small>
+                    <small><%= block.timestamp %></small>
                 </div>
             </li>
         </ul>
       </div>
+      <%})%>
+
     </div>
 
   </body>

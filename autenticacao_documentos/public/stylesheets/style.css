@@ -5,3 +5,9 @@ body {
 a {
   color: #00B7FF;
 }
+
+.card{
+  width: 18rem;
+  display: inline-block !important;
+  margin-right: 10px;
+}
