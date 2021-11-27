@@ -58,8 +58,47 @@
         </ul>
       </div>
       <%})%>
-
     </div>
+    <br><br>
+    <div class="container">
+      <h1>Transactions inside block</h1>
+      <% if(transactions.length == 0 ){ %>
+      <p>This block has no transactions</p>
+      <% }else{%>
 
+      <table class="table table-hover table-striped">
+        <thead>
+          <th scope="col">#</th>
+          <th scope="col">From</th>
+          <th scope="col">To</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Timestamp</th>
+          <th scope="col">Valid?</th>
+        </thead>
+        <tbody>
+          <tr>
+            <% transactions.forEach(function(transaction){ %>
+            <td>index</td>
+            <td class="text-truncate" style="max-width: 100px;">
+              <%= transaction.fromAddress === null? 'System' : transaction.fromAddress %>
+            </td>
+            <td class="text-truncate" style="max-width: 100px;">
+              <%= transaction.toAddress %>
+            </td>
+            <td>
+              <%= transaction.amount %>
+            </td>
+            <td>
+              <%= transaction.timestamp %>
+            </td>
+            <td>
+              <%= transaction.isValid()? 'True' : 'False' %>
+            </td>
+            <%})%>
+            <%}%>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
