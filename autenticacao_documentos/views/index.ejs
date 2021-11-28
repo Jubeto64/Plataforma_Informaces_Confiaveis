@@ -14,7 +14,7 @@
 
     <div class="container">
       <h1>Blocks on chain</h1>
-      <p>Each card represents a block on the chain. Click on block to see the transactions stored inside.</p>
+      <p>Each card represents a block on the chain. Click on the button transactions inside a block to see the transactions stored inside.</p>
 
       <% blocks.forEach(function(block){ %>
       <div class="card">
@@ -54,6 +54,13 @@
                 <div class="text-truncate text-muted">
                     <small><%= block.timestamp %></small>
                 </div>
+            </li>
+
+            <li class="list-group-item">
+              <form action="/" method="post">
+                <input type="hidden" name="block" value="<%= JSON.stringify(block) %>">
+                <button type="submit">Transactions</button>
+              </form>
             </li>
         </ul>
       </div>
